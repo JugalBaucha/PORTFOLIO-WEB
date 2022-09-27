@@ -1,0 +1,884 @@
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  25% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  50% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  75% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  25% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  50% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  75% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+
+@-webkit-keyframes rotate360 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate360 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes Hallo {
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes Hallo {
+  100% {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes appearMouth {
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes appearMouth {
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes dot {
+  100% {
+    width: 1.25em;
+  }
+}
+
+@keyframes dot {
+  100% {
+    width: 1.25em;
+  }
+}
+
+@-webkit-keyframes remove {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes remove {
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes remove2 {
+  98% {
+    opacity: 100%;
+  }
+  99% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes remove2 {
+  98% {
+    opacity: 100%;
+  }
+  99% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: .5vh;
+}
+
+::-webkit-scrollbar-track {
+  margin: .5vh;
+  border-radius: 10vh;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10vh;
+  background: gray;
+  opacity: 90%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 50%;
+}
+
+:root {
+  --shadow:black;
+  --pigColor: pink;
+  --pColor: rgb(0, 0, 0);
+  --sColor: rgb(232, 236, 246);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--shadow);
+}
+
+body .cross {
+  position: absolute;
+  right: .1em;
+  top: 0em;
+  padding: 1vh;
+}
+
+body .cross .crossIcon {
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--sColor);
+  font-size: 3em;
+}
+
+body .questionMark {
+  opacity: 100%;
+  position: fixed;
+  top: 1em;
+  right: 0em;
+  z-index: 9;
+  cursor: pointer;
+  padding: 1vh;
+  height: 2em;
+}
+
+body .questionMark:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+body .questionMark .questionIcon {
+  color: var(--sColor);
+  margin: 0 .4em 0 .4em;
+  height: 1em;
+  font-size: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  text-shadow: .2vh 0vh red, -.2vh 0vh blue;
+}
+
+body .questionMark .questionIcon:hover {
+  opacity: 50%;
+}
+
+body .nav {
+  -webkit-transition: linear .2s;
+  transition: linear .2s;
+  border: 0.5em solid var(--sColor);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  background-image: repeating-linear-gradient(45deg, var(--sColor) 3vh, var(--pColor) 4vh, transparent 20%), repeating-linear-gradient(310deg, var(--sColor) 3vh, var(--pColor) 4vh, transparent 20%), repeating-linear-gradient(45deg, var(--sColor) 2vh, var(--pColor) 3vh);
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
+body .nav .about {
+  opacity: 90%;
+  margin: 1vh;
+  padding: 1vh;
+  background: var(--pColor);
+}
+
+body .nav .about:hover {
+  background: transparent;
+}
+
+body .nav .about .aboutIcon {
+  letter-spacing: .1em;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--sColor);
+  font-size: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body .nav .contact {
+  opacity: 90%;
+  padding: 1vh;
+  background: var(--pColor);
+}
+
+body .nav .contact:hover {
+  background: transparent;
+}
+
+body .nav .contact .contactIcon {
+  letter-spacing: .2em;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--sColor);
+  font-size: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body .nav .aboutOverlay {
+  padding: 0;
+  background: var(--pColor);
+  z-index: 12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  overflow: auto;
+}
+
+body .nav .aboutOverlay .aboutDes1 {
+  position: absolute;
+  left: 1vh;
+  top: 1vh;
+}
+
+body .nav .aboutOverlay .aboutDes1 .aboutHeader {
+  font-size: 4vh;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--sColor);
+}
+
+body .nav .aboutOverlay .aboutDes1 .aboutIntro .aboutIntroDes {
+  font-size: 2vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--sColor);
+}
+
+body .nav .aboutOverlay .aboutDes2 {
+  text-align: right;
+  position: absolute;
+  right: 1vh;
+  bottom: 1vh;
+}
+
+body .nav .aboutOverlay .aboutDes2 .aboutHeader {
+  font-size: 4vh;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--sColor);
+}
+
+body .nav .aboutOverlay .aboutDes2 .aboutIntro .aboutIntroDes {
+  font-size: 2vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--sColor);
+}
+
+body .nav .aboutOverlay .aboutDes3 {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30vh;
+}
+
+body .nav .aboutOverlay .aboutDes3 .aboutHeader {
+  font-size: 4vh;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--sColor);
+}
+
+body .nav .aboutOverlay .aboutDes3 .aboutIntro .aboutIntroDes {
+  text-align: left;
+  font-size: 2vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--sColor);
+}
+
+body .nav .contactOverlay {
+  padding: 0;
+  background: var(--pColor);
+  z-index: 12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  overflow: auto;
+}
+
+body .nav .contactOverlay .contactDes1 .contactHeader {
+  background: var(--sColor);
+  padding: 1vh;
+  opacity: 90%;
+  border-radius: 0;
+  text-align: center;
+  font-size: 4vh;
+  color: var(--pColor);
+  font-family: Impact;
+}
+
+body .nav .contactOverlay .contactDes1 .contactIntro .contactIntroDes {
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .nav .contactOverlay .contactDes1 .contactIntro .contactIntroDes .contactsA {
+  margin-top: 1em;
+}
+
+body .nav .contactOverlay .contactDes1 .contactIntro .contactIntroDes .contactsA:hover {
+  -webkit-text-decoration: .5vh wavy underline;
+          text-decoration: .5vh wavy underline;
+}
+
+body .nav .contactOverlay .contactDes1 .contactIntro .contactIntroDes a {
+  letter-spacing: .5vh;
+  text-decoration: none;
+  font-size: 4vh;
+  color: var(--sColor);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body .nav .active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body .overlay {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  pointer-events: all;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 90%;
+  background: var(--pColor);
+}
+
+body .allBody1 {
+  pointer-events: all;
+  z-index: 12;
+  background: var(--pColor);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: remove 1s ease 2s forwards;
+          animation: remove 1s ease 2s forwards;
+}
+
+body .instruction {
+  margin: 20vh 0 0 0;
+}
+
+body .instruction .start1 {
+  color: var(--sColor);
+  text-align: center;
+  font-size: 3em;
+  font-family: Impact;
+  letter-spacing: .5vh;
+}
+
+body .instruction .start1::after {
+  font-size: 3vh;
+  text-align: left;
+  vertical-align: bottom;
+  content: '...';
+  display: inline-block;
+  overflow: hidden;
+  -webkit-animation: dot steps(4) 1s 2 forwards;
+          animation: dot steps(4) 1s 2 forwards;
+  width: 0;
+}
+
+body .face {
+  color: var(--sColor);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 10%;
+  background: var(--pigColor);
+  height: 200px;
+  width: 200px;
+  border-radius: 10%;
+}
+
+body .face .ears {
+  width: 100%;
+  top: -5%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+body .face .ears .earL {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  background: var(--pigColor);
+  position: absolute;
+  height: 3em;
+  width: 2em;
+  border-radius: 10% 100% 0 50%;
+}
+
+body .face .ears .earR {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  background: var(--pigColor);
+  position: absolute;
+  border-radius: 100% 10% 50% 0;
+  right: 0;
+  height: 3em;
+  width: 2em;
+}
+
+body .face .eye {
+  color: var(--pColor);
+  padding: 0;
+  margin-bottom: 1em;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .face .eye .eyeL {
+  color: var(--pColor);
+  font-size: 5em;
+}
+
+body .face .eye .eyeR {
+  color: var(--pColor);
+  font-size: 5em;
+}
+
+body .face .nose {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: var(--pigColor);
+  padding: .5vh;
+  border-radius: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--pColor);
+  -webkit-box-shadow: 0.1vh 0.1vh 1vh var(--pColor);
+          box-shadow: 0.1vh 0.1vh 1vh var(--pColor);
+}
+
+body .face .nose :active {
+  -webkit-transform: scale(90%);
+          transform: scale(90%);
+}
+
+body .face .nose .nostrils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .face .nose .nostrils .nostrilL {
+  font-size: 2em;
+}
+
+body .face .nose .nostrils .nostrilR {
+  font-size: 2em;
+}
+
+body .mouth {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-animation: appearMouth 1s ease-in 1s forwards;
+          animation: appearMouth 1s ease-in 1s forwards;
+}
+
+body .active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body .remove {
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+body .allBody2 {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--pColor);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+body .allBody2 .introduction {
+  pointer-events: none;
+  -webkit-animation: remove2 4.5s ease-out forwards;
+          animation: remove2 4.5s ease-out forwards;
+  z-index: 2;
+  position: fixed;
+  background: var(--pColor);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: var(--sColor);
+  padding: 1vh;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .allBody2 .introduction .greetings {
+  position: relative;
+  letter-spacing: 2vh;
+  margin-right: -2vh;
+  font-size: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+}
+
+body .allBody2 .introduction .greetings::after {
+  content: ' ';
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--pColor);
+  -webkit-animation: Hallo 1s steps(12) 3s 1 forwards;
+          animation: Hallo 1s steps(12) 3s 1 forwards;
+}
+
+body .allBody2 .introduction .greetings2 {
+  position: relative;
+  margin-right: -.5vh;
+  margin-top: 4em;
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: .5vh;
+}
+
+body .allBody2 .introduction .greetings2 span {
+  font-size: 3em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body .allBody2 .introduction .greetings3 {
+  -webkit-animation: rotate360 10s infinite;
+          animation: rotate360 10s infinite;
+  border: 1vh double var(--pColor);
+  border-radius: 100%;
+  opacity: 90%;
+  margin: 1vh;
+  padding: 2vh;
+  text-transform: uppercase;
+  background: var(--sColor);
+  color: var(--pColor);
+  font-weight: bold;
+  font-size: 2em;
+  font-family: Impact;
+}
+
+body .allBody2 .introduction .greetings4 {
+  margin-right: -.5vh;
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: .5vh;
+}
+
+body .projects {
+  position: relative;
+  top: 10%;
+  bottom: 10%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body .projects .boxes {
+  padding: 0;
+  margin: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 75vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body .projects .boxes .boxed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .1vh;
+  background: var(--sColor);
+  cursor: pointer;
+  width: 35vh;
+  height: 35vh;
+  position: relative;
+}
+
+body .projects .boxes .boxed:hover .projectsOl {
+  visibility: visible;
+}
+
+body .projects .boxes .boxed .imagesP {
+  text-shadow: .4vh 0vh peachpuff, -.4vh 0vh cyan;
+  margin-right: -.2em;
+  letter-spacing: 1vh;
+  color: var(--pColor);
+  font-size: 3vh;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body .projects .boxes .boxed .projectsOl {
+  background: var(--sColor);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 50%;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .projects .boxes .boxed .projectsOl .projectsOlDes {
+  font-weight: bold;
+  letter-spacing: .5vh;
+  color: var(--pColor);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 10vh;
+}
+/*# sourceMappingURL=style.css.map */
